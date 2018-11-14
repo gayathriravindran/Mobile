@@ -1,0 +1,8 @@
+# To Get a list of connected devices:
+adb devices
+# To install an apk:
+adb install <APK NAME>
+# To Install apk where more than one device is connected:
+adb -s <DeviceID> install <APK Name> MAY FAIL WITH "Failure [INSTALL_FAILED_ALREADY_EXISTS]"
+# Install apk where more then one device connected and with error Failure [INSTALL_FAILED_ALREADY_EXISTS]
+adb -s <DeviceID> install -r <APK Name>
